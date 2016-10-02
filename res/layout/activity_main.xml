@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="manhinhdieukhien.com.MainActivity" >
+
+    <TextView
+        android:id="@+id/txtTenDanhBa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bài Tập Lập Trình Android Nâng Cao"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f0f5f5" />
+
+    <Button
+        android:id="@+id/btnlab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài Tập Lab 1"
+        android:textColor="#f0f5f5" />
+
+    <Button
+        android:id="@+id/btnlab2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài Tập Lab 2"
+        android:textColor="#f0f5f5" />
+
+    <Button
+        android:id="@+id/btnlab3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài Tập Lab 3"
+        android:textColor="#f0f5f5" />
+
+    <Button
+        android:id="@+id/btnlab4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài Tập Lab 4"
+        android:textColor="#f0f5f5" />
+
+    <Button
+        android:id="@+id/btnlab5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài Tập Lab 5"
+        android:textColor="#f0f5f5" />
+
+    <Button
+        android:id="@+id/btnlab6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài Tập Lab 6"
+        android:textColor="#f0f5f5" />
+
+    <Button
+        android:id="@+id/btnlab7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài Tập Lab 7"
+        android:textColor="#f0f5f5" />
+
+    <Button
+        android:id="@+id/btnlab8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài Tập Lab 8"
+        android:textColor="#f0f5f5" />
+
+</LinearLayout>
