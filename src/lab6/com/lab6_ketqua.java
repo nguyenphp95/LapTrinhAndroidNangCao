@@ -10,26 +10,30 @@ import android.widget.TextView;
 import manhinhdieukhien.com.R;
 
 public class lab6_ketqua extends Activity implements OnClickListener {
-	TextView txtRelease;
-	Button btnBack;
+	TextView txtHoTen,txtCongTac;
+	Button btnQuayVe;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lab6_ketqua);
 		
-		txtRelease = (TextView) findViewById(R.id.txtRelease);
-		btnBack = (Button) findViewById(R.id.btnBack);
+		txtHoTen = (TextView) findViewById(R.id.txtHoTen);
+		txtCongTac = (TextView) findViewById(R.id.txtCongTac);
+		btnQuayVe = (Button) findViewById(R.id.btnQuayVe);
 		
-		btnBack.setOnClickListener(this);
+		btnQuayVe.setOnClickListener(this);
 		
 		
-		String gtnhan = getIntent().getExtras().getString("hoten");
-		txtRelease.setText(gtnhan);				
+		String gtnhan = getIntent().getExtras().getString("hotennguoidk");
+		txtHoTen.setText(gtnhan);	
+		
+		String gtnhan1 = getIntent().getExtras().getString("noicongtac");
+		txtCongTac.setText(gtnhan1);
 	}
 	@Override
 	public void onClick(View v) {
-		if(v==btnBack){
+		if(v==btnQuayVe){
 			Intent intent = new Intent(this,lab6.class);
 			startActivity(intent);
 		}

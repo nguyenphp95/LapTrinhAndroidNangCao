@@ -10,23 +10,72 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="40dp"
-        android:text="Intent Kèm Gói"
+        android:text="Đơn Đăng Ký Bạn Muốn Hẹn Hò"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
-        android:id="@+id/edtInput"
+        android:id="@+id/edtHoTen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10" >
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/user2"
+        android:ems="10"
+        android:hint="Nhập họ và tên" >
 
         <requestFocus />
     </EditText>
 
-    <Button
-        android:id="@+id/btnSend"
+    <EditText
+        android:id="@+id/edtCongTac"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/bag"
+        android:ems="10"
+        android:hint="Nơi công tác" />
+
+    <EditText
+        android:id="@+id/edtHocTap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/graduate"
+        android:ems="10"
+        android:hint="Nơi học tập" />
+
+    <EditText
+        android:id="@+id/edtHonNhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/heart"
+        android:ems="10"
+        android:hint="Tình trạng hôn nhân" />
+
+    <EditText
+        android:id="@+id/edtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/home"
+        android:ems="10"
+        android:hint="Địa chỉ" />
+
+    <EditText
+        android:id="@+id/edtSDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:drawableLeft="@drawable/phonewhiteblack"
+        android:ems="10"
+        android:hint="Số điện thoại" />
+
+    <Button
+        android:id="@+id/btnGui"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:text="Send" />
+        android:drawableLeft="@drawable/right"
+        android:text="Gửi" />
 
 </LinearLayout>

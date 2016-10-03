@@ -7,31 +7,44 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 import manhinhdieukhien.com.R;
 
 public class lab6 extends Activity implements OnClickListener{
-	Button btnSend;
-	EditText edtInput;
+	Button btnGui;
+	EditText edtHoTen,edtCongTac,edtHocTap,edtHonNhan,edtDiaChi,edtSDT;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lab6);
 		
-		btnSend = (Button) findViewById(R.id.btnSend);
-		edtInput = (EditText) findViewById(R.id.edtInput);
+		btnGui = (Button) findViewById(R.id.btnGui);
+		edtHoTen = (EditText) findViewById(R.id.edtHoTen);
+		edtCongTac = (EditText) findViewById(R.id.edtCongTac);
+		edtHocTap = (EditText) findViewById(R.id.edtHocTap);
+		edtHonNhan = (EditText) findViewById(R.id.edtHonNhan);
+		edtDiaChi = (EditText) findViewById(R.id.edtDiaChi);
+		edtSDT = (EditText) findViewById(R.id.edtSDT);
 		
-		btnSend.setOnClickListener(this);
+		
+		btnGui.setOnClickListener(this);
 		
 	}
 	@Override
 	public void onClick(View v) {
-		if (v==btnSend) {
-			String hoten;
-			hoten = edtInput.getText().toString();
+		if (v==btnGui) {
+			String hoten = edtHoTen.getText().toString();
 			Intent intent = new Intent(getApplicationContext(),lab6_ketqua.class);
-			intent.putExtra("hoten", hoten); //Chuyển gói có tên là hoten
+			intent.putExtra("hotennguoidk", hoten); //Chuyển gói(package) có tên là "hotennguoidk"
 			startActivity(intent);
+			
+			
+			String congtac = edtCongTac.getText().toString();
+			Intent intent1 = new Intent(getApplicationContext(),lab6_ketqua.class);
+			intent1.putExtra("noicongtac", congtac);	
+			startActivity(intent);
+			Toast.makeText(getApplicationContext(), "Thong Tin Nhan"+ congtac, Toast.LENGTH_LONG).show();
 		}
 		
 	}
