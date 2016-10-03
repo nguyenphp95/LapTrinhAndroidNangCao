@@ -35,16 +35,25 @@ public class lab6 extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		if (v==btnGui) {
 			String hoten = edtHoTen.getText().toString();
-			Intent intent = new Intent(getApplicationContext(),lab6_ketqua.class);
-			intent.putExtra("hotennguoidk", hoten); //Chuyển gói(package) có tên là "hotennguoidk"
-			startActivity(intent);
-			
-			
 			String congtac = edtCongTac.getText().toString();
-			Intent intent1 = new Intent(getApplicationContext(),lab6_ketqua.class);
-			intent1.putExtra("noicongtac", congtac);	
+			String hoctap = edtHocTap.getText().toString();
+			String honnhan = edtHonNhan.getText().toString();
+			String diachi = edtDiaChi.getText().toString();
+			String sdt = edtSDT.getText().toString();
+			
+			Intent intent = new Intent(getApplicationContext(),lab6_ketqua.class);
+			
+			intent.putExtra("hotennguoidk", hoten); //Chuyển gói(package) có tên là "hotennguoidk"
+			intent.putExtra("noicongtac", congtac);	
+			intent.putExtra("noihoctap", hoctap);
+			intent.putExtra("tinhtranghonnhan", honnhan);	
+			intent.putExtra("diachiht", diachi);	
+			intent.putExtra("sodienthoai", sdt);	
+
+			
+
+			
 			startActivity(intent);
-			Toast.makeText(getApplicationContext(), "Thong Tin Nhan"+ congtac, Toast.LENGTH_LONG).show();
 		}
 		
 	}
