@@ -101,7 +101,7 @@
                 android:text="Lập Trình Viên tại FPT Polytechnic Tây Nguyên" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/txtRelease"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"

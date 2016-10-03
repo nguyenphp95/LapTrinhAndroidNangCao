@@ -41,6 +41,8 @@
             		android:label="Bài Tập Lab 5"></activity>
         <activity android:name="lab6.com.lab6"
             		android:label="Bài Tập Lab 6"></activity>
+        <activity android:name="lab6.com.lab6_ketqua"
+            		android:label="Kết Quả Nhận"></activity>
         <activity android:name="lab7.com.lab7"
             		android:label="Bài Tập Lab 7"></activity>
         <activity android:name="lab8.com.lab8"
