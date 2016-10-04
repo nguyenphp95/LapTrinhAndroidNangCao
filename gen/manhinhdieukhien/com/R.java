@@ -59,29 +59,35 @@ public final class R {
         public static final int vitage=0x7f020022;
     }
     public static final class id {
-        public static final int action_settings=0x7f080031;
+        public static final int TextView01=0x7f080029;
+        public static final int TextView02=0x7f08002b;
+        public static final int action_settings=0x7f080038;
         public static final int btnCall=0x7f080018;
         public static final int btnDetail=0x7f08001a;
         public static final int btnDialog=0x7f080014;
         public static final int btnGui=0x7f080021;
         public static final int btnInfo=0x7f080000;
+        public static final int btnKetQua=0x7f08002f;
         public static final int btnLogin=0x7f080012;
         public static final int btnQuayVe=0x7f080028;
         public static final int btnSMS=0x7f080019;
-        public static final int btnlab1=0x7f080029;
-        public static final int btnlab2=0x7f08002a;
-        public static final int btnlab3=0x7f08002b;
-        public static final int btnlab4=0x7f08002c;
-        public static final int btnlab5=0x7f08002d;
-        public static final int btnlab6=0x7f08002e;
-        public static final int btnlab7=0x7f08002f;
-        public static final int btnlab8=0x7f080030;
+        public static final int btnlab1=0x7f080030;
+        public static final int btnlab2=0x7f080031;
+        public static final int btnlab3=0x7f080032;
+        public static final int btnlab4=0x7f080033;
+        public static final int btnlab5=0x7f080034;
+        public static final int btnlab6=0x7f080035;
+        public static final int btnlab7=0x7f080036;
+        public static final int btnlab8=0x7f080037;
         public static final int edtCongTac=0x7f08001c;
         public static final int edtDiaChi=0x7f08001f;
         public static final int edtHoTen=0x7f08001b;
         public static final int edtHocTap=0x7f08001d;
         public static final int edtHonNhan=0x7f08001e;
         public static final int edtSDT=0x7f080020;
+        public static final int edtSoa=0x7f08002a;
+        public static final int edtSob=0x7f08002c;
+        public static final int edtSoc=0x7f08002e;
         public static final int fileWebView=0x7f080002;
         public static final int imageView1=0x7f080005;
         public static final int imageView2=0x7f080006;
@@ -93,8 +99,7 @@ public final class R {
         public static final int listDanhBa=0x7f080016;
         public static final int myRL=0x7f080013;
         public static final int textView1=0x7f080001;
-        public static final int textView3=0x7f08000c;
-        public static final int textView4=0x7f08000d;
+        public static final int textView2=0x7f08002d;
         public static final int textView5=0x7f08000e;
         public static final int textView6=0x7f08000f;
         public static final int textView7=0x7f08000a;
@@ -106,9 +111,11 @@ public final class R {
         public static final int txtPass=0x7f080011;
         public static final int txtReg=0x7f080010;
         public static final int txtRelease=0x7f08000b;
+        public static final int txtResult=0x7f08000c;
         public static final int txtSDT=0x7f080027;
         public static final int txtSdt=0x7f080017;
         public static final int txtTenDanhBa=0x7f080015;
+        public static final int txtX2=0x7f08000d;
     }
     public static final class layout {
         public static final int activity_button_custom=0x7f030000;
