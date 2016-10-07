@@ -6,8 +6,8 @@
     >
 
     <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="14" />
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
   	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -47,6 +47,8 @@
             		android:label="Bài Tập Lab 7"></activity>
         <activity android:name="lab8.com.lab8"
             		android:label="Bài Tập Lab 8"></activity>
+        <activity android:name="lab8.com.lab8_update"
+            		android:label="Trang cập nhật Notification"></activity>
         <activity android:name="quantri.com.quantri"></activity>
         
     </application>

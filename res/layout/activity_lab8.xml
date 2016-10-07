@@ -5,10 +5,25 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/txtTenDanhBa"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bài Tập Lab 8"
+        android:layout_gravity="center"
+        android:text="Bài tập Lab 8 (Notification)"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnTao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Tạo notification" />
+
+    <Button
+        android:id="@+id/btnDong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đóng hết notification" />
 
 </LinearLayout>
