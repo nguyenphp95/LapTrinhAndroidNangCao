@@ -56,7 +56,8 @@ public final class R {
         public static final int style=0x7f02001f;
         public static final int user=0x7f020020;
         public static final int user2=0x7f020021;
-        public static final int vitage=0x7f020022;
+        public static final int vintageballon=0x7f020022;
+        public static final int vitage=0x7f020023;
     }
     public static final class id {
         public static final int TextView01=0x7f080029;

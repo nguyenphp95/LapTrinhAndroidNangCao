@@ -3,6 +3,7 @@ package lab6.com;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -33,28 +34,28 @@ public class lab6 extends Activity implements OnClickListener{
 	}
 	@Override
 	public void onClick(View v) {
-		if (v==btnGui) {
-			String hoten = edtHoTen.getText().toString();
-			String congtac = edtCongTac.getText().toString();
-			String hoctap = edtHocTap.getText().toString();
-			String honnhan = edtHonNhan.getText().toString();
-			String diachi = edtDiaChi.getText().toString();
-			String sdt = edtSDT.getText().toString();
-			
-			Intent intent = new Intent(getApplicationContext(),lab6_ketqua.class);
-			
-			intent.putExtra("hotennguoidk", hoten); //Chuyển gói(package) có tên là "hotennguoidk"
-			intent.putExtra("noicongtac", congtac);	
-			intent.putExtra("noihoctap", hoctap);
-			intent.putExtra("tinhtranghonnhan", honnhan);	
-			intent.putExtra("diachiht", diachi);	
-			intent.putExtra("sodienthoai", sdt);	
-
-			
-
-			
-			startActivity(intent);
+		try {
+			if (v==btnGui) {
+				String hoten = edtHoTen.getText().toString();
+				String congtac = edtCongTac.getText().toString();
+				String hoctap = edtHocTap.getText().toString();
+				String honnhan = edtHonNhan.getText().toString();
+				String diachi = edtDiaChi.getText().toString();
+				String sdt = edtSDT.getText().toString();
+				
+				Intent intent = new Intent(getApplicationContext(),lab6_ketqua.class);
+				
+				intent.putExtra("hotennguoidk", hoten); //Chuyển gói dữ liệu có tên là "hotennguoidk"
+				intent.putExtra("noicongtac", congtac);	
+				intent.putExtra("noihoctap", hoctap);
+				intent.putExtra("tinhtranghonnhan", honnhan);	
+				intent.putExtra("diachiht", diachi);	
+				intent.putExtra("sodienthoai", sdt);	
+	
+				startActivity(intent);
+			}
+		} catch (Exception e) {
+			Log.w("Loi he thong",e.toString());		
 		}
-		
 	}
 }
